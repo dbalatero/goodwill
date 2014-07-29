@@ -9,6 +9,7 @@ require 'open-uri'
 Bundler.require
 
 terms = %w[
+  sequential
   reverb
   tremolo
   precision\ bass
