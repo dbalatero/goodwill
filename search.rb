@@ -9,6 +9,7 @@ require 'open-uri'
 Bundler.require
 
 terms = %w[
+  korg
   sequential
   reverb
   tremolo
@@ -26,7 +27,7 @@ terms = %w[
 ]
 
 def fetch_page(search)
-  url = "http://www.shopgoodwill.com/search/SearchKey.asp?"\
+  url = "https://www.shopgoodwill.com/search/SearchKey.asp?"\
     "itemtitle=#{CGI.escape(search)}&showthumbs=on&sortBy=itemEndTime"\
     "&sortOrder=a&closed=&sellerid=all&srchdesc=&month=&day=&year=&days=0"
 
